@@ -3,7 +3,7 @@ import { inngest } from "./client"
 import prisma from "@/lib/prisma";
 
 // Inngest Function to save user data to a database
-export const syncUserData = inngest.createFunction({ id: "sync/user/data" }, { event: 'client/user.created' },
+export const syncUserCreation = inngest.createFunction({ id: "sync/user/data" }, { event: 'client/user.created' },
     async({ event }) => {
         const { data } = event
         await prisma.user.create({
