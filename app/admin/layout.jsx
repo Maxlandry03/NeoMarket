@@ -3,8 +3,8 @@ import { SignedIn, SignedOut, SignIn } from "@clerk/nextjs";
 import { useUser } from "@clerk/nextjs";
 
 export const metadata = {
-    title: "GoCart. - Admin",
-    description: "GoCart. - Admin",
+    title: "NeoMarket. - Admin",
+    description: "NeoMarket. - Admin",
     
 };
 
